@@ -1,0 +1,90 @@
+.country {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linejoin: round;
+}
+
+.graticule {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .3;
+  stroke-width: .5px;
+}
+
+.graticule.outline {
+  stroke: #333;
+  stroke-opacity: 1;
+  stroke-width: 1.5px;
+}
+
+
+/*body {
+  height: 100%;
+}*/
+
+#mainContent {
+    overflow: hidden; /* will contain if #first is longer than #second */
+float:left; 
+}
+
+#container {
+    width: 700px;
+    height:500px;
+    float:left; /* add this */
+/*    background-color: #F7CFA2;
+*/    border: 1px solid red;
+  background-color: white;
+}
+
+#player{
+    overflow: hidden;
+    background-color: #fff1d3;
+    height:500px;
+    width:550px;
+    float:left; /* add this */
+        border: 1px solid green;
+
+
+}
+
+li.dropdown {
+  padding: 5px;
+  float: center;
+
+}
+
+.dropdown-toggle{
+  background-color: #ff6600;
+  padding-left: 5px;
+  font-family: Century Gothic, sans-serif;
+  color: black;
+  vertical-align: center;
+
+}
+/*
+li{
+        padding: 2px;
+        border: 1px solid black;
+}
+*/
+h3 {
+        padding-left: 5px;
+font-family: Century Gothic, sans-serif;
+        color: #ff6600;
+}
+
+body {
+      background-color:  white; 
+      padding: 5px;
+}
+
+#formDiv {float:left; 
+background-color: black;
+}
+
+button{
+  text-align: center;
+  float: center;
+  margin: auto;
+}

@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}Digital India{% endblock %}
+{% block mainviz %}
+
+<div id="details">
+
+</div>
+{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/ctm.css' %}" />
+    <script src="{% static 'd3/d3.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'json/flare.json' %}"></script>
+    <script src="{% static 'js/collapsibleTreeMap.js' %}"></script>
+
+{% endblock %}
+
+
+
+
+

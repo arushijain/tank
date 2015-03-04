@@ -1,0 +1,28 @@
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  stroke: #85144b;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 15px sans-serif;
+  color: #fff;
+
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+
+
+body {
+  border: 2px black;
+	background-color: #3D9970;
+}
+

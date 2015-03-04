@@ -1,0 +1,92 @@
+
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}Create an Issue of Interest{% endblock %}
+{% block mainviz %}
+
+
+
+<div id="details">
+<form method="post" action={% url 'base.views.createIssue' %}>
+    {% csrf_token %}
+{{ issueFormset.errors }}
+{{ issueFormset.non_field_errors }}
+            <div>
+ {{ issueFormset.management_form }}
+    {% for form in issueFormset %}
+        {{ form.as_p }}
+       <!--  <ul>
+            <li>Heading {{ form.issue_name }}</li>
+            <li>Text {{ form.issue_text }}</li>
+            <li>Sublocation {{ form.sublocation }}</li>
+            <li>Tags {{ form.tags }}</li>
+            <li>User Email {{ form.user }}</li>
+            <li>Sector {{ form.sector }}</li>
+
+        </ul> -->
+    {% endfor %}
+
+                </div>
+           <!--  <fieldset>
+                <legend>Sublocation</legend>
+                {{ sublocation_form.management_form }}
+                {{ sublocation_form.non_form_errors }}
+                {% for form in sublocation_form %}
+                    {{ form.id }}
+                    <div class="inline {{ sublocation_form.prefix }}">
+                        {{ form.description.errors }}
+                        {{ form.description.label_tag }}
+                        {{ form.description }}
+                    </div>
+                {% endfor %}
+            </fieldset>
+            <fieldset>
+                <legend>User</legend>
+                {{ user_form.management_form }}
+                {{ user_form.non_form_errors }}
+                {% for form in user_form %}
+                    {{ form.id }}
+                    <div class="inline {{ user_form.prefix }}">
+                        
+                        {{ form.user_email }}
+                    </div>
+                {% endfor %}
+            </fieldset> -->
+
+<!--       {{ issueFormset.management_form }}
+    {% for form in issueFormset %}
+        {{ form }}
+    {% endfor %}
+
+    {{ issueFormset.management_form }}
+    {% for form in issueFormset %}
+        {{ form.id }}
+        <ul>
+            <li>Text {{ form.issue_text }}</li>
+            <li>Sublocation {{ form.sublocation }}</li>
+            <li>Tags {{ form.tags }}</li>
+            <li>User Email {{ form.user }}</li>
+        </ul>
+    {% endfor %}
+
+     {{ tagFormset.management_form }}
+    {% for form in tagFormset %}
+        {{ form.id }}
+        <ul>
+            <li>Add a Tag{{ form.tag_name }}</li>
+        </ul>
+    {% endfor %} -->
+
+<button type="submit">Create Ticket</button>
+</form>
+</div>
+{% endblock %}
+{% block content %}
+
+<script src="{{ STATIC_URL }}js/createIssue.js"></script>
+<script src="{{ STATIC_URL }}dynamic-formsets/jquery.formset.js"></script>
+<script src="{% static 'js/fixCFRF.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}Base{% endblock %}</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+    
+    {% block navbar %}
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <ul class="nav nav-pills nav-justified">
+              <li role="presentation" class="active"><a href={% url 'base.views.about' %}>What Are We About</a></li>
+               <li role="presentation"><a href={% url 'base.views.digitalIndia' %}>Digital India Visualized</a></li>
+               <li role="presentation"><a href={% url 'base.views.project' %}>Current Project</a></li>
+              <li role="presentation"><a href={% url 'base.views.createIssue' %}>Create a Community Ticket</a></li>
+              <li role="presentation"><a href={% url 'base.views.viewTickets' %}>View Tickets</a></li>
+              <li role="presentation"><a href={% url 'base.views.signup' %}>Signup</a></li>
+            </ul> 
+         </div>
+        </nav>
+            <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" />
+            <link rel="stylesheet" type="text/css" href="{% static 'css/navBar.css' %}" />
+
+            <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap-theme.min.css' %}" />
+            <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+            <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+            <script src="{% static 'js/fixCFRF.js' %}"></script>
+
+    {% endblock %}
+    </div>
+
+    <div id="mainviz">
+        {% block mainviz %}
+        <ul>
+	    <p> This viz has not been configured yet </p>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+</body>
+</html>

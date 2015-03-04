@@ -1,0 +1,67 @@
+{
+    "name": "Top Level",
+    "parent": "null",
+    "value": 10,
+    "type": "white",
+    "level": "#FF851B",
+    "children": [
+      {
+        "name": "Digital Infrastructure",
+        "parent": "Top Level",
+        "value": 15,
+        "type": "white",
+        "level": "#85144b",
+        "children": [
+          {
+            "name": "Son of A",
+            "parent": "Level 2: A",
+            "value": 5,
+            "type": "steelblue",
+            "level": "orange"
+          },
+          {
+            "name": "Daughter of A",
+            "parent": "Level 2: A",
+            "value": 8,
+            "type": "steelblue",
+            "level": "red"
+          }
+        ]
+      },
+      {
+        "name": "Mobile phone & Bank account",
+        "parent": "Top Level",
+        "value": 10,
+        "type": "white",
+        "level": "#85144b"
+      },
+            {
+        "name": "Digital identity",
+        "parent": "Top Level",
+        "value": 10,
+        "type": "white",
+        "level": "#85144b"
+      },
+            {
+        "name": "Easy access to a Common Service Centre",
+        "parent": "Top Level",
+        "value": 10,
+        "type": "white",
+        "level": "#85144b"
+      },
+            {
+        "name": "Shareable private space on a public cloud",
+        "parent": "Top Level",
+        "value": 10,
+        "type": "white",
+        "level": "#85144b"
+      },
+                  {
+        "name": "Safe and secure Cyber-space",
+        "parent": "Top Level",
+        "value": 10,
+        "type": "white",
+        "level": "#85144b"
+      }
+    ]
+  }

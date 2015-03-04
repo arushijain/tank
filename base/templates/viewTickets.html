@@ -1,0 +1,19 @@
+
+
+
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}Crowdsourced Issues{% endblock %}
+{% block mainviz %}
+{{ issues }}
+
+
+<div id="details">
+<iframe width=100% height='1000' frameborder='0' src={{ formUrl }}></iframe>
+</div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}
